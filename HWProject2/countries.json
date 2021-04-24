@@ -1,12 +1,16 @@
 {
     "countries" : [
         {
-            "url" : "http:\/\/www.google.com",
+            "url" : "https:\/\/raw.githubusercontent.com\/thutawunna\/CountriesProject\/main\/HWProject2\/france.json",
             "name" : "France"
         },
         {
-            "url" : "http:\/\/www.google.com",
-            "name" : "Louvre Museum"
+            "url" : "https:\/\/raw.githubusercontent.com\/thutawunna\/CountriesProject\/main\/HWProject2\/japan.json",
+            "name" : "Japan"
+        },
+        {
+            "url" : "https:\/\/raw.githubusercontent.com\/thutawunna\/CountriesProject\/main\/HWProject2\/switzerland.json",
+            "name" : "Japan"
         }
     ]
 }
