@@ -9,10 +9,12 @@ class Country {
     var name: String
     var places: [Place]
     var continent: String
+    var flag: String
     
     init() {
         name = ""
         places = [Place]()
         continent = ""
+        flag = ""
     }
 }

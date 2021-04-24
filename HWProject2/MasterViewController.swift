@@ -128,6 +128,7 @@ class MasterViewController : UITableViewController {
             var placesArray = [Place]()
             country.name = dictionary["name"]! as! String
             country.continent = dictionary["continent"]! as! String
+//            country.name = "\u{1F1EB}\u{1F1F7}"
 
             for index in 0...placeDict.count - 1 {
                 let singlePlace = placeDict[index]
