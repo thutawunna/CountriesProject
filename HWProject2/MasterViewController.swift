@@ -95,6 +95,8 @@ class MasterViewController : UITableViewController {
     }
     
     func populateCountries() {
+        
+        
         let country1 = Country()
         country1.name = "France"
         country1.continent = "Europe"
