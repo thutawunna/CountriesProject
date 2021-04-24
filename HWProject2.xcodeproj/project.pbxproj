@@ -20,7 +20,10 @@
 		2A80C85226322A0E00C70B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A80C85026322A0E00C70B9F /* LaunchScreen.storyboard */; };
 		2AB7813A2633478800FF0872 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB781392633478800FF0872 /* FavoritesCollectionViewController.swift */; };
 		2AB7813D263347E300FF0872 /* FavoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB7813C263347E300FF0872 /* FavoritesCollectionViewCell.swift */; };
-		2AB781402633964D00FF0872 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB7813F2633964D00FF0872 /* countries.json */; };
+		2AB781442633ACDC00FF0872 /* france.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB781432633ACDC00FF0872 /* france.json */; };
+		2AB781472633AD7400FF0872 /* japan.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB781462633AD7400FF0872 /* japan.json */; };
+		2AB7814A2633ADBA00FF0872 /* switzerland.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB781492633ADBA00FF0872 /* switzerland.json */; };
+		2AB7814D2633ADD300FF0872 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AB7814C2633ADD300FF0872 /* countries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +42,10 @@
 		2A80C85326322A0E00C70B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AB781392633478800FF0872 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		2AB7813C263347E300FF0872 /* FavoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewCell.swift; sourceTree = "<group>"; };
-		2AB7813F2633964D00FF0872 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		2AB781432633ACDC00FF0872 /* france.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = france.json; sourceTree = "<group>"; };
+		2AB781462633AD7400FF0872 /* japan.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = japan.json; sourceTree = "<group>"; };
+		2AB781492633ADBA00FF0872 /* switzerland.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = switzerland.json; sourceTree = "<group>"; };
+		2AB7814C2633ADD300FF0872 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,7 @@
 		2A80C84426322A0A00C70B9F /* HWProject2 */ = {
 			isa = PBXGroup;
 			children = (
-				2AB7813F2633964D00FF0872 /* countries.json */,
+				2AB7814C2633ADD300FF0872 /* countries.json */,
 				2A80C84526322A0A00C70B9F /* AppDelegate.swift */,
 				2A80C84726322A0A00C70B9F /* SceneDelegate.swift */,
 				2A80C84926322A0A00C70B9F /* ViewController.swift */,
@@ -87,6 +93,9 @@
 				2A3FB68926323BE900B93E01 /* CollectionViewCell.swift */,
 				2AB781392633478800FF0872 /* FavoritesCollectionViewController.swift */,
 				2AB7813C263347E300FF0872 /* FavoritesCollectionViewCell.swift */,
+				2AB781432633ACDC00FF0872 /* france.json */,
+				2AB781462633AD7400FF0872 /* japan.json */,
+				2AB781492633ADBA00FF0872 /* switzerland.json */,
 			);
 			path = HWProject2;
 			sourceTree = "<group>";
@@ -149,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A80C85226322A0E00C70B9F /* LaunchScreen.storyboard in Resources */,
+				2AB7814A2633ADBA00FF0872 /* switzerland.json in Resources */,
+				2AB781472633AD7400FF0872 /* japan.json in Resources */,
 				2A80C84F26322A0E00C70B9F /* Assets.xcassets in Resources */,
-				2AB781402633964D00FF0872 /* countries.json in Resources */,
+				2AB781442633ACDC00FF0872 /* france.json in Resources */,
+				2AB7814D2633ADD300FF0872 /* countries.json in Resources */,
 				2A80C84D26322A0A00C70B9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

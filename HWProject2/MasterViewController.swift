@@ -5,6 +5,7 @@
 //  Created by Thuta on 4/22/21.
 //
 
+import Foundation
 import UIKit
 
 class MasterViewController : UITableViewController {
@@ -96,30 +97,33 @@ class MasterViewController : UITableViewController {
     
     func populateCountries() {
         let api = "https://raw.githubusercontent.com/thutawunna/CountriesProject/main/HWProject2/countries.json"
-        
-//        let jsonData = try? Data(contentsOf: url!)
-//        var countryDictionary = [[String:AnyObject]]()
-//
-//        if (jsonData != nil) {
-//            let dictionary = (try! JSONSerialization.jsonObject(with: jsonData!, options: []))
-//            print(dictionary)
-//
-//            countryDictionary = dictionary!["Countries"] as! [[String:AnyObject]]
-//        }
-        
-//        let country = Country()
-//        var places = [Place]()
-//        var count: Int = 0
-//        let firstCountryPlaces = countryDictionary[0]["places"]!.object(Int(0)) as! [NSObject:AnyObject]
-//        print(firstCountryPlaces)
-        
-//        if (firstCountryPlaces != nil) {
-//            let placeDictionary = (try! JSONSerialization.jsonObject(with: firstCountryPlaces!, options: .mutableContainers)) as? NSDictionary
-//            print(placeDictionary)
-//        }
-//
-        
-        
+        let url = URL(string: api)!
+
+        let jsonData = try? Data(contentsOf: url)
+
+        if (jsonData != nil) {
+            let dictionary = (try!JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers)) as! NSDictionary
+            print(dictionary)
+
+            let placeDict = dictionary["places"]! as! [[String:AnyObject]]
+            print(placeDict)
+            let country = Country()
+            var placesArray = [Place]()
+            country.name = dictionary["name"]! as! String
+            country.continent = dictionary["continent"]! as! String
+
+            for index in 0...placeDict.count - 1 {
+                let singlePlace = placeDict[index]
+                let place = Place()
+                place.name = singlePlace["name"]! as! String
+                place.location = singlePlace["location"]! as! String
+                place.image = singlePlace["image"]! as! String
+                place.url = singlePlace["url"]! as! String
+                placesArray.append(place)
+            }
+            country.places = placesArray
+            countriesArray.append(country)
+        }
         
 //        let country1 = Country()
 //        country1.name = "France"

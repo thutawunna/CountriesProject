@@ -1,0 +1,24 @@
+{
+    "name" : "Japan",
+    "places" : [
+        {
+            "url" : "",
+            "image" : "fuji.jpg",
+            "name" : "Mount Fuji",
+            "location" : "Fujinomiya"
+        },
+        {
+            "url" : "",
+            "image" : "temple.jpg",
+            "name" : "Sensō‑ji Temple",
+            "location" : "Tokyo"
+        },
+        {
+            "url" : "",
+            "image" : "vintage.jpg",
+            "name" : "Vintage Clothing Stores",
+            "location" : "Kyoto"
+        }
+    ],
+    "continent" : "Asia"
+}
