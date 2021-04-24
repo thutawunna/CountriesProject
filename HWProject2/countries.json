@@ -1,65 +1,62 @@
-{
-    "Countries":
-    [
+[
+  {
+    "name" : "France",
+    "places" : [
       {
-        "name" : "France",
-        "places" : [
-          {
-            "url" : "http:\/\/www.google.com",
-            "image" : "eiffel.jpg",
-            "name" : "Eiffel Tower",
-            "location" : "Paris"
-          },
-          {
-            "url" : "http:\/\/www.google.com",
-            "image" : "louvre.jpg",
-            "name" : "Louvre Museum",
-            "location" : "Paris"
-          }
-        ],
-        "continent" : "Europe"
+        "url" : "http:\/\/www.google.com",
+        "image" : "eiffel.jpg",
+        "name" : "Eiffel Tower",
+        "location" : "Paris"
       },
       {
-        "name" : "Japan",
-        "places" : [
-          {
-            "url" : "",
-            "image" : "fuji.jpg",
-            "name" : "Mount Fuji",
-            "location" : "Fujinomiya"
-          },
-          {
-            "url" : "",
-            "image" : "temple.jpg",
-            "name" : "Sensō‑ji Temple",
-            "location" : "Tokyo"
-          },
-          {
-            "url" : "",
-            "image" : "vintage.jpg",
-            "name" : "Vintage Clothing Stores",
-            "location" : "Kyoto"
-          }
-        ],
-        "continent" : "Asia"
-      },
-      {
-        "name" : "Switzerland",
-        "places" : [
-          {
-            "url" : "",
-            "image" : "bern.jpg",
-            "name" : "Bern",
-            "location" : ""
-          },
-          {
-            "url" : "",
-            "image" : "kandergrund.jpg",
-            "name" : "Kandergrund",
-            "location" : ""
-          }
-        ],
-        "continent" : "Europe"
+        "url" : "http:\/\/www.google.com",
+        "image" : "louvre.jpg",
+        "name" : "Louvre Museum",
+        "location" : "Paris"
       }
-    ]
-}
+    ],
+    "continent" : "Europe"
+  },
+  {
+    "name" : "Japan",
+    "places" : [
+      {
+        "url" : "",
+        "image" : "fuji.jpg",
+        "name" : "Mount Fuji",
+        "location" : "Fujinomiya"
+      },
+      {
+        "url" : "",
+        "image" : "temple.jpg",
+        "name" : "Sensō‑ji Temple",
+        "location" : "Tokyo"
+      },
+      {
+        "url" : "",
+        "image" : "vintage.jpg",
+        "name" : "Vintage Clothing Stores",
+        "location" : "Kyoto"
+      }
+    ],
+    "continent" : "Asia"
+  },
+  {
+    "name" : "Switzerland",
+    "places" : [
+      {
+        "url" : "",
+        "image" : "bern.jpg",
+        "name" : "Bern",
+        "location" : ""
+      },
+      {
+        "url" : "",
+        "image" : "kandergrund.jpg",
+        "name" : "Kandergrund",
+        "location" : ""
+      }
+    ],
+    "continent" : "Europe"
+  }
+]

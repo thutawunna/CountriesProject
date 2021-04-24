@@ -95,79 +95,110 @@ class MasterViewController : UITableViewController {
     }
     
     func populateCountries() {
+        let api = "https://raw.githubusercontent.com/thutawunna/CountriesProject/main/HWProject2/countries.json"
+        
+        let url = URL(string: api)
+        let jsonData = try? Data(contentsOf: url!)
+        let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
+        if let dictionary = json as? [String: Any] {
+            if let number = dictionary
+        }
+        
+//        let jsonData = try? Data(contentsOf: url!)
+//        var countryDictionary = [[String:AnyObject]]()
+//
+//        if (jsonData != nil) {
+//            let dictionary = (try! JSONSerialization.jsonObject(with: jsonData!, options: []))
+//            print(dictionary)
+//
+//            countryDictionary = dictionary!["Countries"] as! [[String:AnyObject]]
+//        }
+        
+//        let country = Country()
+//        var places = [Place]()
+//        var count: Int = 0
+//        let firstCountryPlaces = countryDictionary[0]["places"]!.object(Int(0)) as! [NSObject:AnyObject]
+//        print(firstCountryPlaces)
+        
+//        if (firstCountryPlaces != nil) {
+//            let placeDictionary = (try! JSONSerialization.jsonObject(with: firstCountryPlaces!, options: .mutableContainers)) as? NSDictionary
+//            print(placeDictionary)
+//        }
+//
         
         
-        let country1 = Country()
-        country1.name = "France"
-        country1.continent = "Europe"
         
-        var places1 = [Place]()
-        let place1 = Place()
-        place1.name = "Eiffel Tower"
-        place1.image = "eiffel.jpg"
-        place1.location = "Paris"
-        place1.url = "http://www.google.com"
-        places1.append(place1)
-        
-        let place2 = Place()
-        place2.name = "Louvre Museum"
-        place2.image = "louvre.jpg"
-        place2.location = "Paris"
-        place2.url = "http://www.google.com"
-        places1.append(place2)
-        
-        country1.places = places1
-        countriesArray.append(country1)
-        
-        let japan = Country()
-        japan.name = "Japan"
-        japan.continent = "Asia"
-        
-        var japanPlaces = [Place]()
-        let japanPlace1 = Place()
-        japanPlace1.name = "Mount Fuji"
-        japanPlace1.image = "fuji.jpg"
-        japanPlace1.location = "Fujinomiya"
-        
-        let japanPlace2 = Place()
-        japanPlace2.name = "Sensō\u{2011}ji Temple"
-        japanPlace2.image = "temple.jpg"
-        japanPlace2.location = "Tokyo"
-        
-        let japanPlace3 = Place()
-        japanPlace3.name = "Vintage Clothing Stores"
-        japanPlace3.image = "vintage.jpg"
-        japanPlace3.location = "Kyoto"
-        
-        japanPlaces.append(japanPlace1)
-        japanPlaces.append(japanPlace2)
-        japanPlaces.append(japanPlace3)
-        
-        japan.places = japanPlaces
-        
-        countriesArray.append(japan)
-        
-        let switzerland = Country()
-        switzerland.name = "Switzerland"
-        switzerland.continent = "Europe"
-        
-        var switzPlaces = [Place]()
-        let switz1 = Place()
-        switz1.name = "Bern"
-        switz1.image = "bern.jpg"
-        switz1.location = ""
-        
-        let switz2 = Place()
-        switz2.name = "Kandergrund"
-        switz2.image = "kandergrund.jpg"
-        switz2.location = ""
-        
-        switzPlaces.append(switz1)
-        switzPlaces.append(switz2)
-        
-        switzerland.places = switzPlaces
-        
-        countriesArray.append(switzerland)
+//        let country1 = Country()
+//        country1.name = "France"
+//        country1.continent = "Europe"
+//
+//        var places1 = [Place]()
+//        let place1 = Place()
+//        place1.name = "Eiffel Tower"
+//        place1.image = "eiffel.jpg"
+//        place1.location = "Paris"
+//        place1.url = "http://www.google.com"
+//        places1.append(place1)
+//
+//        let place2 = Place()
+//        place2.name = "Louvre Museum"
+//        place2.image = "louvre.jpg"
+//        place2.location = "Paris"
+//        place2.url = "http://www.google.com"
+//        places1.append(place2)
+//
+//        country1.places = places1
+//        countriesArray.append(country1)
+//
+//        let japan = Country()
+//        japan.name = "Japan"
+//        japan.continent = "Asia"
+//
+//        var japanPlaces = [Place]()
+//        let japanPlace1 = Place()
+//        japanPlace1.name = "Mount Fuji"
+//        japanPlace1.image = "fuji.jpg"
+//        japanPlace1.location = "Fujinomiya"
+//
+//        let japanPlace2 = Place()
+//        japanPlace2.name = "Sensō\u{2011}ji Temple"
+//        japanPlace2.image = "temple.jpg"
+//        japanPlace2.location = "Tokyo"
+//
+//        let japanPlace3 = Place()
+//        japanPlace3.name = "Vintage Clothing Stores"
+//        japanPlace3.image = "vintage.jpg"
+//        japanPlace3.location = "Kyoto"
+//
+//        japanPlaces.append(japanPlace1)
+//        japanPlaces.append(japanPlace2)
+//        japanPlaces.append(japanPlace3)
+//
+//        japan.places = japanPlaces
+//
+//        countriesArray.append(japan)
+//
+//        let switzerland = Country()
+//        switzerland.name = "Switzerland"
+//        switzerland.continent = "Europe"
+//
+//        var switzPlaces = [Place]()
+//        let switz1 = Place()
+//        switz1.name = "Bern"
+//        switz1.image = "bern.jpg"
+//        switz1.location = ""
+//
+//        let switz2 = Place()
+//        switz2.name = "Kandergrund"
+//        switz2.image = "kandergrund.jpg"
+//        switz2.location = ""
+//
+//        switzPlaces.append(switz1)
+//        switzPlaces.append(switz2)
+//
+//        switzerland.places = switzPlaces
+//
+//        countriesArray.append(switzerland)
 //        let encoder = JSONEncoder()
 //        encoder.outputFormatting = .prettyPrinted
 //        let data = try! encoder.encode(countriesArray)
