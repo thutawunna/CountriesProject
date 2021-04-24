@@ -2,13 +2,13 @@
     "name" : "France",
     "places" : [
         {
-            "url" : "http:\/\/www.google.com",
+            "url" : "https:\/\/www.toureiffel.paris\/en",
             "image" : "eiffel.jpg",
             "name" : "Eiffel Tower",
             "location" : "Paris"
         },
         {
-            "url" : "http:\/\/www.google.com",
+            "url" : "https:\/\/www.louvre.fr\/en",
             "image" : "louvre.jpg",
             "name" : "Louvre Museum",
             "location" : "Paris"

@@ -2,16 +2,16 @@
     "name" : "Switzerland",
     "places" : [
         {
-            "url" : "",
+            "url" : "https:\/\/www.bern.com\/en\/home",
             "image" : "bern.jpg",
             "name" : "Bern",
-            "location" : ""
+            "location" : "Switzerland"
         },
         {
-            "url" : "",
+            "url" : "https:\/\/www.myswitzerland.com\/en-us\/destinations\/blauseeli-900-m-ue-m\/",
             "image" : "kandergrund.jpg",
             "name" : "Kandergrund",
-            "location" : ""
+            "location" : "Switzerland"
         }
     ],
     "continent" : "Europe"

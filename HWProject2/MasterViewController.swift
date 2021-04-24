@@ -17,7 +17,7 @@ class MasterViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateCountries()
+        populateUrls()
         
 //        if (currentDarkModeStyle == 1) {
 //            darkModeStatus = true
@@ -95,18 +95,35 @@ class MasterViewController : UITableViewController {
         return cell
     }
     
-    func populateCountries() {
+    func populateUrls() {
         let api = "https://raw.githubusercontent.com/thutawunna/CountriesProject/main/HWProject2/countries.json"
+        
+        let url = URL(string: api)
+        let jsonData = try? Data(contentsOf: url!)
+        if (jsonData != nil) {
+            let dictionary = (try! JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers)) as! NSDictionary
+//            print(dictionary)
+            let urlsDictionary = dictionary["countries"]! as! [[String:String]]
+//            print(urlsDictionary)
+            for i in 0...urlsDictionary.count - 1 {
+                let country = urlsDictionary[i]
+                populateCountries(api: country["url"]!)
+                
+            }
+        }
+    }
+    
+    func populateCountries(api: String) {
         let url = URL(string: api)!
 
         let jsonData = try? Data(contentsOf: url)
 
         if (jsonData != nil) {
             let dictionary = (try!JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers)) as! NSDictionary
-            print(dictionary)
+//            print(dictionary)
 
-            let placeDict = dictionary["places"]! as! [[String:AnyObject]]
-            print(placeDict)
+            let placeDict = dictionary["places"]! as! [[String:String]]
+//            print(placeDict)
             let country = Country()
             var placesArray = [Place]()
             country.name = dictionary["name"]! as! String
@@ -115,10 +132,10 @@ class MasterViewController : UITableViewController {
             for index in 0...placeDict.count - 1 {
                 let singlePlace = placeDict[index]
                 let place = Place()
-                place.name = singlePlace["name"]! as! String
-                place.location = singlePlace["location"]! as! String
-                place.image = singlePlace["image"]! as! String
-                place.url = singlePlace["url"]! as! String
+                place.name = singlePlace["name"]!
+                place.location = singlePlace["location"]!
+                place.image = singlePlace["image"]!
+                place.url = singlePlace["url"]!
                 placesArray.append(place)
             }
             country.places = placesArray

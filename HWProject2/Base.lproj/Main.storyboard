@@ -131,7 +131,7 @@
                                         </imageView>
                                     </subviews>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="placeImage" destination="fRn-oI-nZJ" id="QzK-ff-h4l"/>
                                 </connections>
@@ -314,9 +314,6 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

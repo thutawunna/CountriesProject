@@ -2,19 +2,19 @@
     "name" : "Japan",
     "places" : [
         {
-            "url" : "",
+            "url" : "https:\/\/www.japan-guide.com\/e\/e2172.html",
             "image" : "fuji.jpg",
             "name" : "Mount Fuji",
             "location" : "Fujinomiya"
         },
         {
-            "url" : "",
+            "url" : "https:\/\/www.japan-guide.com\/e\/e3001.html",
             "image" : "temple.jpg",
             "name" : "Sensō‑ji Temple",
             "location" : "Tokyo"
         },
         {
-            "url" : "",
+            "url" : "https:\/\/www.timeout.com\/tokyo\/shopping\/vintage-tokyo-top-20",
             "image" : "vintage.jpg",
             "name" : "Vintage Clothing Stores",
             "location" : "Kyoto"

@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     @IBAction func addToFavorites(_ sender: Any) {
         var favoritesArray: [String] = userDefaults.stringArray(forKey: "favorites") ?? []
         var favoriteStatus = ""
-        let alert = UIAlertController(title: "", message: favoriteStatus, preferredStyle: .alert)
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
         if let p = place {
             if (!favoritesArray.contains(p.name)) {
                 favoritesArray.append(p.name)
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                 alert.addAction(yesAction)
                 alert.addAction(noAction)
             }
-            alert.message = favoriteStatus
+            alert.title = favoriteStatus
             self.present(alert, animated: true, completion: nil)
         }
         
