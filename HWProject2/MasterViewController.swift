@@ -97,13 +97,6 @@ class MasterViewController : UITableViewController {
     func populateCountries() {
         let api = "https://raw.githubusercontent.com/thutawunna/CountriesProject/main/HWProject2/countries.json"
         
-        let url = URL(string: api)
-        let jsonData = try? Data(contentsOf: url!)
-        let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-        if let dictionary = json as? [String: Any] {
-            if let number = dictionary
-        }
-        
 //        let jsonData = try? Data(contentsOf: url!)
 //        var countryDictionary = [[String:AnyObject]]()
 //
