@@ -6,18 +6,21 @@
             "image" : "fuji.jpg",
             "name" : "Mount Fuji",
             "location" : "Fujinomiya"
+            "address" : "Kitayama, Fujinomiya, Shizuoka 418-0112, Japan"
         },
         {
             "url" : "https:\/\/www.japan-guide.com\/e\/e3001.html",
             "image" : "temple.jpg",
             "name" : "Sensō‑ji Temple",
-            "location" : "Tokyo"
+            "location" : "Tokyo",
+            "address" : "2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan"
         },
         {
-            "url" : "https:\/\/www.timeout.com\/tokyo\/shopping\/vintage-tokyo-top-20",
-            "image" : "vintage.jpg",
-            "name" : "Vintage Clothing Stores",
-            "location" : "Kyoto"
+            "url" : "https:\/\/www.japan-guide.com\/e\/e3009.html",
+            "image" : "tokyoTower.jpg",
+            "name" : "Tokyo Tower",
+            "location" : "Tokyo",
+            "address" : "4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japan"
         }
     ],
     "continent" : "Asia"

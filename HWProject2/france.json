@@ -5,13 +5,15 @@
             "url" : "https:\/\/www.toureiffel.paris\/en",
             "image" : "eiffel.jpg",
             "name" : "Eiffel Tower",
-            "location" : "Paris"
+            "location" : "Paris",
+            "address" : "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France"
         },
         {
             "url" : "https:\/\/www.louvre.fr\/en",
             "image" : "louvre.jpg",
             "name" : "Louvre Museum",
-            "location" : "Paris"
+            "location" : "Paris",
+            "address" : "Rue de Rivoli, 75001 Paris, France"
         }
     ],
     "continent" : "Europe"

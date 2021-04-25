@@ -244,6 +244,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeL-F9-oh9">
+                                <rect key="frame" x="20" y="406" width="374" height="255"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wh-VA-JZR">
                                 <rect key="frame" x="20" y="339" width="374" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
@@ -271,8 +277,11 @@
                             <constraint firstItem="gVJ-TX-9dy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1Fk-89-eZd"/>
                             <constraint firstItem="1xg-lp-QIj" firstAttribute="leading" secondItem="1Vp-h3-gf7" secondAttribute="leading" id="29t-Bu-S2N"/>
                             <constraint firstItem="MeE-jc-yfg" firstAttribute="top" secondItem="gVJ-TX-9dy" secondAttribute="top" id="3i1-ae-C3k"/>
+                            <constraint firstItem="EeL-F9-oh9" firstAttribute="leading" secondItem="2wh-VA-JZR" secondAttribute="leading" id="73x-DG-ItV"/>
+                            <constraint firstItem="EeL-F9-oh9" firstAttribute="top" secondItem="gVJ-TX-9dy" secondAttribute="bottom" constant="7" id="Doo-sN-HPe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1xg-lp-QIj" secondAttribute="trailing" constant="249" id="IFg-4j-joN"/>
                             <constraint firstItem="2wh-VA-JZR" firstAttribute="bottom" secondItem="gVJ-TX-9dy" secondAttribute="bottom" id="Ko5-am-6ea"/>
+                            <constraint firstItem="EeL-F9-oh9" firstAttribute="trailing" secondItem="2wh-VA-JZR" secondAttribute="trailing" id="L9F-5n-dVC"/>
                             <constraint firstItem="dp2-li-6lG" firstAttribute="trailing" secondItem="1Vp-h3-gf7" secondAttribute="trailing" id="PjA-3w-tU7"/>
                             <constraint firstItem="2wh-VA-JZR" firstAttribute="trailing" secondItem="gVJ-TX-9dy" secondAttribute="trailing" id="Pu4-l4-YXH"/>
                             <constraint firstItem="MeE-jc-yfg" firstAttribute="trailing" secondItem="2wh-VA-JZR" secondAttribute="trailing" id="Shw-Cw-G0T"/>
@@ -288,12 +297,14 @@
                             <constraint firstItem="1Vp-h3-gf7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o3q-x1-zlo"/>
                             <constraint firstItem="1Vp-h3-gf7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAV-GW-ytT"/>
                             <constraint firstItem="dp2-li-6lG" firstAttribute="leading" secondItem="1Vp-h3-gf7" secondAttribute="leading" id="ulj-EQ-NIk"/>
+                            <constraint firstItem="1xg-lp-QIj" firstAttribute="top" secondItem="EeL-F9-oh9" secondAttribute="bottom" constant="97" id="wRg-C8-yGx"/>
                             <constraint firstItem="2wh-VA-JZR" firstAttribute="leading" secondItem="gVJ-TX-9dy" secondAttribute="leading" id="yzU-X7-6aj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lzu-gD-7VD"/>
                     <connections>
                         <outlet property="heartButton" destination="MeE-jc-yfg" id="03X-dd-40D"/>
+                        <outlet property="placeAddress" destination="EeL-F9-oh9" id="h1J-En-zT5"/>
                         <outlet property="placeImage" destination="1Vp-h3-gf7" id="vaW-j0-4m1"/>
                         <outlet property="placeLocation" destination="2wh-VA-JZR" id="IGq-Yj-v0T"/>
                         <outlet property="placeName" destination="gVJ-TX-9dy" id="f52-25-dtm"/>

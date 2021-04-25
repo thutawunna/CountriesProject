@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var placeImage: UIImageView!
     @IBOutlet weak var placeName: UILabel!
     @IBOutlet weak var placeLocation: UILabel!
+    @IBOutlet weak var placeAddress: UILabel!
     
     var place: Place?
     
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
             placeName.text = p.name
             placeImage.image = UIImage(named: p.image)
             placeLocation.text = p.location
+            placeAddress.text = p.address
             
             let toCheckLength = p.name.split(separator: " ")
             var i = 0

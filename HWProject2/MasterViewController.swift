@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+var flags = ["France" : "\u{1F1EB}\u{1F1F7}","Japan" : "\u{1F1EF}\u{1F1F5}", "Switzerland": "\u{1F1E8}\u{1F1ED}"]
+
 class MasterViewController : UITableViewController {
     
     var countriesArray = [Country]()
@@ -107,13 +109,14 @@ class MasterViewController : UITableViewController {
 //            print(urlsDictionary)
             for i in 0...urlsDictionary.count - 1 {
                 let country = urlsDictionary[i]
-                populateCountries(api: country["url"]!)
+                populateCountries(api: country["url"]!, name: country["name"]!)
                 
             }
         }
     }
     
-    func populateCountries(api: String) {
+    func populateCountries(api: String, name: String) {
+        print(name)
         let url = URL(string: api)!
 
         let jsonData = try? Data(contentsOf: url)
@@ -126,7 +129,8 @@ class MasterViewController : UITableViewController {
 //            print(placeDict)
             let country = Country()
             var placesArray = [Place]()
-            country.name = dictionary["name"]! as! String
+            country.name = "\(flags[name] ?? "") "
+            country.name += dictionary["name"]! as! String
             country.continent = dictionary["continent"]! as! String
 //            country.name = "\u{1F1EB}\u{1F1F7}"
 

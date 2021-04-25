@@ -5,13 +5,15 @@
             "url" : "https:\/\/www.bern.com\/en\/home",
             "image" : "bern.jpg",
             "name" : "Bern",
-            "location" : "Switzerland"
+            "location" : "Switzerland",
+            "address" : "46.9480° N, 7.4474° E"
         },
         {
             "url" : "https:\/\/www.myswitzerland.com\/en-us\/destinations\/blauseeli-900-m-ue-m\/",
             "image" : "kandergrund.jpg",
             "name" : "Kandergrund",
-            "location" : "Switzerland"
+            "location" : "Switzerland",
+            "address" : "46.5566° N, 7.6609° E"
         }
     ],
     "continent" : "Europe"

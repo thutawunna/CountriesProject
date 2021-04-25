@@ -10,11 +10,13 @@ class Place {
     var name: String
     var location: String
     var url: String
+    var address: String
     
     init() {
         image = ""
         name = ""
         location = ""
         url = ""
+        address = ""
     }
 }
