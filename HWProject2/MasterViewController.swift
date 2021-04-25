@@ -106,7 +106,7 @@ class MasterViewController : UITableViewController {
             let dictionary = (try! JSONSerialization.jsonObject(with: jsonData!, options: .mutableContainers)) as! NSDictionary
 //            print(dictionary)
             let urlsDictionary = dictionary["countries"]! as! [[String:String]]
-//            print(urlsDictionary)
+            print(urlsDictionary)
             for i in 0...urlsDictionary.count - 1 {
                 let country = urlsDictionary[i]
                 populateCountries(api: country["url"]!, name: country["name"]!)
