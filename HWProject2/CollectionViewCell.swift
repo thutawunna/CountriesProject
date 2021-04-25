@@ -8,8 +8,5 @@
 import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
-//    @IBOutlet weak var placeLabel: UILabel!
-    @IBOutlet weak var placeImage: UIImageView!
-    
-    
+    @IBOutlet weak var placeImage: UIImageView!    
 }
