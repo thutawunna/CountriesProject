@@ -141,6 +141,7 @@ class MasterViewController : UITableViewController {
                 place.location = singlePlace["location"]!
                 place.image = singlePlace["image"]!
                 place.url = singlePlace["url"]!
+                place.address = singlePlace["address"]!
                 placesArray.append(place)
             }
             country.places = placesArray
