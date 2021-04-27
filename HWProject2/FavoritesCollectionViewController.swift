@@ -17,12 +17,10 @@ class FavoritesCollectionViewController: UICollectionViewController, UICollectio
     var itemSize: CGSize = CGSize(width: 0, height: 0)
     var places: [Place] = []
     var currentPlace: Place?
-    var countriesArray: [Country] = []
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadFavorites()
 
         if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             let numPlacesInRow: CGFloat = 3
@@ -42,22 +40,6 @@ class FavoritesCollectionViewController: UICollectionViewController, UICollectio
         return itemSize
     }
     
-    func loadFavorites() {
-        let favoritesArray: [String] = userDefaults.stringArray(forKey: "favorites") ?? []
-        
-        var i = 0
-        while (i < countriesArray.count) {
-            var j = 0
-            while (j < countriesArray[i].places.count) {
-                let place = countriesArray[i].places[j]
-                if (favoritesArray.contains(place.name)) {
-                    places.append(place)
-                }
-                j += 1
-            }
-            i += 1
-        }
-    }
 
     // MARK: UICollectionViewDataSource
 

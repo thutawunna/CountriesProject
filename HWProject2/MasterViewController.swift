@@ -40,7 +40,22 @@ class MasterViewController : UITableViewController {
             }
         } else if (segue.identifier == "showFavorites") {
             if let controller = segue.destination as? FavoritesCollectionViewController {
-                controller.countriesArray = countriesArray
+                var favorites = [Place]()
+                let favoritesArray: [String] = userDefaults.stringArray(forKey: "favorites") ?? []
+                
+                var i = 0
+                while (i < countriesArray.count) {
+                    var j = 0
+                    while (j < countriesArray[i].places.count) {
+                        let place = countriesArray[i].places[j]
+                        if (favoritesArray.contains(place.name)) {
+                            favorites.append(place)
+                        }
+                        j += 1
+                    }
+                    i += 1
+                }
+                controller.places = favorites
             }
         }
         
